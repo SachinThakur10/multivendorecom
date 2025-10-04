@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+  command = "echo 'Static deployment'"
+
+[[redirects]]
+  from = "/*"
+  to = "/demo/index.html"
+  status = 200
+
+[build.environment]
+  PHP_VERSION = "8.0"
